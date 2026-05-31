@@ -13,11 +13,24 @@
     <header class="header">
       <div class="content">
         <nav>
-          <a>Apollo</a>
+          <a
+          {% if current_url | default(value="/") | trim_end_matches(pat='/') | safe == get_url(path='/') %}
+            class="header-link active"
+          {% else %}
+            class="header-link"
+          {% endif %}
+          id="header-home-link" href="/">Apollo</a>
 
           <div class="links">
-            <a href="/download/">Download</a>
-            <a href="https://docs.getapollo.dev/">Documentation</a>
+            {% for link in config.extra.links %}
+              <a
+              {% if current_url | default(value="/") | trim_end_matches(pat='/') | safe == get_url(path=link.url) %}
+                class="header-link active"
+              {% else %}
+                class="header-link"
+              {% endif %}
+              href="{{link.url}}">{{ link.label }}</a>
+            {% endfor %}
           </div>
         </nav>
       </div>
