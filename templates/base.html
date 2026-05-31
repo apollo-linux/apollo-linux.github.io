@@ -8,24 +8,28 @@
 </head>
 
 <body>
-  <header class="header">
-    <div class="content">
-      <nav>
-        <a>Apollo</a>
+  <div id="top">
 
-        <div class="links">
-          <a href="/download/">Download</a>
-          <a href="https://docs.getapollo.dev/">Documentation</a>
-        </div>
-      </nav>
-    </div>
-  </header>
+    <header class="header">
+      <div class="content">
+        <nav>
+          <a>Apollo</a>
 
-  <section class="section">
-    <div class="content">
-      {% block content %} {% endblock content %}
-    </div>
-  </section>
+          <div class="links">
+            <a href="/download/">Download</a>
+            <a href="https://docs.getapollo.dev/">Documentation</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="content">
+        {% block content %} {% endblock content %}
+      </div>
+    </section>
+
+  </div>
 
   <footer>
     <div class="content">
