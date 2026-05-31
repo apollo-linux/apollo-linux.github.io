@@ -1,6 +1,6 @@
 name: Build and deploy Zola website
 on:
-  workflow-dispatch:
+  workflow_dispatch:
   push:
     branches:
       - main
