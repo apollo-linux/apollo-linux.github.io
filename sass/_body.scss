@@ -1,15 +1,38 @@
 @use 'variables' as *;
 
+@use 'sass:color';
+
 @media (prefers-color-scheme: dark) {
     body {
         background-color: #{$dark-background-colour};
         color: #ffffff;
+
+        a {
+            transition: color 0.25s;
+            color: color.mix(
+                #ffffff,
+                $apollo-theme-colour,
+                40%
+            )
+        }
+
+        a:hover {
+            color: color.mix(
+                #ffffff,
+                $apollo-theme-colour,
+                70%
+            )
+        }
     }
 } 
 @media (prefers-color-scheme: light) {
     body {
         background-color: #{$light-background-colour};
         color: #000000;
+
+        a {
+            color: #000000;
+        }
     }
 }
 
