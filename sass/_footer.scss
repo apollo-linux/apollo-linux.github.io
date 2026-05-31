@@ -2,6 +2,14 @@
 
 @use 'sass:color';
 
+@media (prefers-color-scheme: light) {
+    footer {
+        background: #{
+            color.adjust($light-background-colour, $lightness: -7.5%)
+        };
+    }
+}
+
 @media (prefers-color-scheme: dark) {
     footer {
         background: #{
@@ -13,4 +21,40 @@
 footer {
     clear: bottom;
 
+    div#footer-box {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        h1 {
+            font-size: 16pt;
+        }
+
+        div#copyright {
+            width: auto;
+        }
+
+        div#links {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+
+            div {
+                min-width: 175px;
+
+                ul.link-list {
+                    list-style: none;
+                    padding: 0;
+
+                    li {
+                        padding-block: 0.2em;
+                    }
+                    
+                    a{  
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
 }
