@@ -20,6 +20,10 @@ body {
         font-weight: 800;
     }
 
-    max-width: 1000px;
-    margin-inline: auto;
+    margin: 0;
+
+    div.content {
+        max-width: $page-width;
+        margin-inline: auto;
+    }
 }

@@ -9,25 +9,29 @@
 
 <body>
   <header class="header">
-    <nav>
-      <a>Apollo</a>
+    <div class="content">
+      <nav>
+        <a>Apollo</a>
 
-      <div class="links">
-        <a href="/download/">Download</a>
-        <a href="https://docs.getapollo.dev/">Documentation</a>
-      </div>
-    </nav>
+        <div class="links">
+          <a href="/download/">Download</a>
+          <a href="https://docs.getapollo.dev/">Documentation</a>
+        </div>
+      </nav>
+    </div>
   </header>
 
   <section class="section">
-    <div class="container">
+    <div class="content">
       {% block content %} {% endblock content %}
     </div>
   </section>
 
   <footer>
-    <p>© 2026 Apollo Contributors</p>
-    <p>Apollo is made by humans, for humans</p>
+    <div class="content">
+      <p>© 2026 Apollo Contributors</p>
+      <p>Apollo is made by humans, for humans</p>
+    </div>
   </footer>
 </body>
 

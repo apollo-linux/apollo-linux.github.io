@@ -1,0 +1,11 @@
+@use 'variables' as *;
+
+@use 'sass:color';
+
+@media (prefers-color-scheme: dark) {
+    footer {
+        background: #{
+            color.adjust($dark-background-colour, $lightness: 3.5%)
+        };
+    }
+}
