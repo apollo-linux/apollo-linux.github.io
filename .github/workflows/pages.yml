@@ -1,8 +1,12 @@
 name: Build and deploy Zola website
 on:
+  workflow-dispatch:
   push:
     branches:
       - main
+    paths-ignore:
+      - "**/README.md"
+      - "**/CONTRIBUTING.md"
 
 permissions:
   contents: read
