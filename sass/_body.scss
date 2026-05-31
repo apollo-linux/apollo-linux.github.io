@@ -31,7 +31,20 @@
         color: #000000;
 
         a {
-            color: #000000;
+            transition: color 0.25s;
+            color: color.mix(
+                #000000,
+                $apollo-theme-colour,
+                40%
+            )
+        }
+
+        a:hover {
+            color: color.mix(
+                #000000,
+                $apollo-theme-colour,
+                70%
+            )
         }
     }
 }
