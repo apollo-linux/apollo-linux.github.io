@@ -63,7 +63,16 @@ body {
     justify-content: space-between;
 
     section.main {
-        margin-block: 2
+        margin-block: 2;
+
+        p {
+            font-size: 13pt;
+            line-height: 1.5em;
+
+            code {
+                font-size: 12pt;
+            }
+        }
     }
 
     div.content {
