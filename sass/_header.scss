@@ -1,13 +1,18 @@
 @use 'variables' as *;
 
+@use 'sass:color';
+
 @media (prefers-color-scheme: dark) {
     a.header-link {
         color: white;
     }
 
     a.header-link:hover {
-        color: white;
-        opacity: 0.5;
+        color: color.adjust(
+            $apollo-theme-colour,
+            $saturation: -50%,
+            $lightness: 20%,
+        )
     }
 }
 
@@ -17,8 +22,11 @@
     }
 
     a.header-link:hover {
-        color: black;
-        opacity: 0.7;
+        color: color.adjust(
+            $apollo-theme-colour,
+            $saturation: -30%,
+            $lightness: -20%,
+        )
     }
 }
 
@@ -43,7 +51,7 @@ header {
             padding: 8px;
             margin-block: auto;
             font-weight: 600;
-            transition: opacity 0.2s;
+            transition: color 0.15s;
         }
     }
 }
