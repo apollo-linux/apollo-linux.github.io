@@ -1,5 +1,28 @@
 @use 'variables' as *;
 
+@media (prefers-color-scheme: dark) {
+    a.header-link {
+        color: white;
+    }
+
+    a.header-link:hover {
+        color: white;
+        opacity: 0.5;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    a.header-link {
+        color: black;
+    }
+
+    a.header-link:hover {
+        color: black;
+        opacity: 0.7;
+    }
+}
+
+
 header {
     nav, div.links {
         justify-content: space-between;
@@ -19,6 +42,7 @@ header {
             padding: 8px;
             margin-block: auto;
             font-weight: 600;
+            transition: opacity 0.2s;
         }
     }
 }
