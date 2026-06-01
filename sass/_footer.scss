@@ -34,7 +34,8 @@ footer {
         }
 
         div#copyright {
-            width: auto;
+            min-width: 150px;
+            flex: 1 200px;
             
             img.apollo-logo {
                 max-height: 40px;
