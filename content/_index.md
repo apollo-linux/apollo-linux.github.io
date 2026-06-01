@@ -4,4 +4,4 @@ title: Apollo
 
 # Welcome to Apollo
 
-Apollo is a Linux Desktop!
+Apollo is a Linux operating system
