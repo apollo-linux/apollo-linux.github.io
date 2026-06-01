@@ -10,9 +10,9 @@
     a.header-link:hover {
         color: color.adjust(
             $apollo-theme-colour,
-            $saturation: -50%,
-            $lightness: 20%,
-        )
+            $saturation: -30%,
+            $lightness: 30%,
+        );
     }
 }
 
@@ -43,6 +43,7 @@ header {
 
             .apollo-logo {
                 max-height: 32px;
+                transition: filter 0.15s;
             }
         }
 
