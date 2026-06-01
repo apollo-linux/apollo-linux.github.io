@@ -30,7 +30,7 @@
     }
 }
 
-@media (max-width: 424px) {
+@media (max-width: 499px) {
     header {
         nav {
             justify-content: center;
@@ -44,7 +44,7 @@
     }
 }
 
-@media (min-width: 425px) {
+@media (min-width: 500px) {
     nav, div.links {
         justify-content: space-between;
 
