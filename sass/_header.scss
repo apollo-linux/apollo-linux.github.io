@@ -8,12 +8,17 @@ header {
 
         a#header-home-link {
             display: flex;
+
+            .apollo-logo {
+                max-height: 32px;
+            }
         }
 
         a.header-link {
             text-decoration: none;
-            padding: 6px 12px;
-            font-weight: 700;
+            padding: 8px;
+            margin-block: auto;
+            font-weight: 600;
         }
     }
 }

@@ -19,7 +19,12 @@
           {% else %}
             class="header-link"
           {% endif %}
-          id="header-home-link" href="/">Apollo</a>
+          id="header-home-link" href="/" aria-label="Go the Home Page" >
+            <picture class="apollo-logo">
+              <source srcset="/images/logo_dark.svg" media="(prefers-color-scheme: light)"/>
+              <img class="apollo-logo" src="/images/logo.svg" alt="The Apollo Logo">
+            </picture>
+          </a>
 
           <div class="links">
             {% for link in config.extra.links %}
