@@ -1,0 +1,39 @@
+@use 'variables' as *;
+
+@use 'sass:color';
+
+@media (prefers-color-scheme: light) {
+    body {
+        div#welcome {
+            background: linear-gradient(
+                180deg,
+                $light-background-colour,
+                hsl(270, 36%, 85%) 100%
+            );
+        }
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        div#welcome {
+            background: linear-gradient(
+                180deg,
+                $dark-background-colour,
+                hsl(270, 21%, 13%) 100%
+            );
+        }
+    }
+}
+
+body {
+    div.index-section {
+        div.content {
+            padding-block: 2em;
+        }
+    }
+
+    div#welcome {
+
+    }
+}

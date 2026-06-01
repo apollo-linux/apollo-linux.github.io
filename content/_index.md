@@ -2,6 +2,6 @@
 title: Apollo
 ---
 
-# Welcome to Apollo
-
-Apollo is a Linux operating system
+{% index_section(id="welcome") %}
+A quote
+{% end %}
