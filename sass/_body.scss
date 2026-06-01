@@ -62,9 +62,13 @@ body {
     flex-direction: column;
     justify-content: space-between;
 
+    section.main {
+        margin-block: 2
+    }
+
     div.content {
         max-width: $page-width;
         margin-inline: auto;
-        padding: 0.75em 2em;
+        padding-inline: 2em;
     }
 }

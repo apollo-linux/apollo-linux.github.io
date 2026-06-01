@@ -20,12 +20,13 @@
 
 footer {
     clear: bottom;
+    margin-top: 36px;
+    padding-block: 12px 24px;
 
     div#footer-box {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        margin-bottom: 24px;
         gap: 18px;
 
         h1 {
@@ -34,7 +35,7 @@ footer {
 
         div#copyright {
             width: auto;
-
+            
             img.apollo-logo {
                 max-height: 40px;
                 margin-top: 20px;
