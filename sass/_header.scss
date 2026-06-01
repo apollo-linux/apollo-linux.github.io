@@ -30,13 +30,45 @@
     }
 }
 
+@media (max-width: 424px) {
+    header {
+        nav {
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+
+            div.links, a#header-home-link {
+                justify-content: center;
+            }
+        }
+    }
+}
+
+@media (min-width: 425px) {
+    nav, div.links {
+        justify-content: space-between;
+
+        div.links {
+            justify-content: flex-end;
+        }
+    }
+}
+
 
 header {
     margin-block: 1em;
+
+    nav {
+        gap: 8px;
+    }
+
     nav, div.links {
-        justify-content: space-between;
         display: flex;
         vertical-align: middle;
+
+        div.links {
+            flex-wrap: wrap;
+        }
 
         a#header-home-link {
             display: flex;
