@@ -15,7 +15,7 @@ theme = "catppuccin-mocha"
 [extra]
 # Put all your custom variables here
 links = [
-  { url = "/links", label = "Downloads"},
+  { url = "/downloads", label = "Downloads"},
   { url = "https://docs.getapollo.dev", label = "Docs"},  
   { url = "https://docs.getapollo.dev/posts", label = "Blog"}
 ]
