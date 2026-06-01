@@ -25,6 +25,7 @@ footer {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        margin-bottom: 24px;
 
         h1 {
             font-size: 16pt;
@@ -32,6 +33,11 @@ footer {
 
         div#copyright {
             width: auto;
+
+            img.apollo-logo {
+                max-height: 40px;
+                margin-top: 20px;
+            }
         }
 
         div#links {
