@@ -8,7 +8,7 @@
             background: linear-gradient(
                 180deg,
                 $light-background-colour,
-                hsl(270, 36%, 85%) 100%
+                hsl(270, 39%, 69%) 100%
             );
         }
     }
@@ -20,7 +20,7 @@
             background: linear-gradient(
                 180deg,
                 $dark-background-colour,
-                hsl(270, 21%, 13%) 100%
+                hsl(270, 26%, 18%) 100%
             );
         }
     }
@@ -53,6 +53,14 @@ body {
             flex-direction: column;
             justify-content: center;
             text-align: center;
+            gap: 2.5em;
+        }
+
+        div#landing-start {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
             gap: 1.5em;
         }
 
@@ -60,7 +68,7 @@ body {
             max-height: 80px;
         }
 
-        $landing-screenshot-shadow: 0px 0px 15px 2px;
+        $landing-screenshot-shadow: 0px 0px 9px 3px;
 
         img#landing-screenshot {
             width: 90%;
