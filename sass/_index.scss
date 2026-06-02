@@ -2,6 +2,9 @@
 
 @use 'sass:color';
 
+$landing-screenshot-shadow: 0px 0px 6px min(0.625vw, 4px);
+
+
 @media (prefers-color-scheme: light) {
     body {
         div#welcome {
@@ -10,6 +13,10 @@
                 $light-background-colour,
                 hsl(270, 39%, 69%) 100%
             );
+
+            img#landing-screenshot {
+                box-shadow: $landing-screenshot-shadow hsla(0, 0, 15, 0.55);
+            }
         }
     }
 }
@@ -22,6 +29,10 @@
                 $dark-background-colour,
                 hsl(270, 26%, 18%) 100%
             );
+
+            img#landing-screenshot {
+                box-shadow: $landing-screenshot-shadow hsla(0, 0, 0, 0.4);
+            }
         }
     }
 }
@@ -81,9 +92,8 @@ body {
             width: 90%;
             max-width: 750px;
             border-radius: min(calc(2.5vw), 24px);
-            border: min(calc(2vw), 18px) solid #111115;
+            border: min(calc(2vw), 18px) solid hsl(280, 0, 8);
             margin-inline: auto;
-            box-shadow: 0px 0px 6px min(0.625vw, 4px) rgba(0, 0, 0, 0.5);
         }
     }
 }
