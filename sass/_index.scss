@@ -77,24 +77,6 @@ body {
             justify-content: center;
             margin-block: 0;
             gap: 16px;
-
-            a.button#download-button {
-                background-color: color.adjust(
-                    $apollo-theme-colour,
-                    $saturation: -5%,
-                    $lightness: -5%,
-                );
-                color: white;
-            }
-
-            a.button#download-button:hover {
-                background-color: color.adjust(
-                    $apollo-theme-colour,
-                    $saturation: -5%,
-                    $lightness: -10%,
-                );
-                color: white;
-            }
         }
 
         img#landing-screenshot {
