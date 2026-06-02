@@ -77,7 +77,7 @@ body {
         }
 
         img#welcome-logo {
-            max-height: 80px;
+            max-height: min(max(48px, 12vw), 80px);
         }
 
         div#landing-buttons {
