@@ -1,5 +1,5 @@
 ---
-title: An up to date, easy to use and privacy respecting operating system for your computer.
+title: An up to date, easy to use and privacy respecting operating system for your computer
 ---
 
 {% index_section(id="welcome") %}
