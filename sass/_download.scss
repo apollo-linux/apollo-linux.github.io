@@ -1,0 +1,27 @@
+body {
+    div.download-container {
+        h2 {
+            margin:0;
+        }
+
+        p.description {
+            margin: 0.35em 0;
+        }
+
+        p.info {
+            font-size: 12pt;
+            line-height: 1.2em;
+            margin: 0;
+
+            code {
+                font-size: 11pt;
+                padding: 3px;
+                border-radius: 4px;
+            }
+        }
+
+        div.button-container {
+            display: flex;
+        }
+    }
+}

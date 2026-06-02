@@ -13,7 +13,7 @@ title: An up to date, easy to use and privacy respecting operating system for yo
 </div>
 
 <div id="landing-buttons">
-    {{ button(id="download-button", href="/downloads", label="Download Apollo") }}
+    {{ button(id="download-button", extra_classes="suggestive", href="/downloads", label="Download Apollo") }}
     {{ button(href="#everything-you-need", label="Learn more") }}
 </div>
 
