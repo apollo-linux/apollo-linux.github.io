@@ -5,7 +5,7 @@
 @media (prefers-color-scheme: light) {
     footer {
         background: #{
-            color.adjust($light-background-colour, $lightness: -3.75%)
+            color.adjust($light-background-colour, $lightness: -4.5%)
         };
     }
 }
