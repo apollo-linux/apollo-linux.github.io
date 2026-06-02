@@ -39,13 +39,39 @@ $landing-screenshot-shadow: 0px 0px 6px min(0.625vw, 4px);
 
 body {
     div.index-section {
+        text-align: center;
+
+        h1 {
+            font-size: 28pt;
+        }
+
         div.content {
             padding-block: 2em;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
         }
 
         p {
             font-size: 13pt;
             line-height: 1.5em;
+        }
+    }
+
+    div#ready-from-day-one {
+        div.content {
+            img#window-assortment {
+                margin-inline: auto;
+                max-width: min(800px, 100%);
+            }
+        }
+    }
+
+    div#get-software {
+        div.content {
+            img#bazaar-screenshot {
+                max-width: 70%;
+            }
         }
     }
 
