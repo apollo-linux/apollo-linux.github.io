@@ -1,7 +1,7 @@
 <section>
     <div {% if id %} id="{{id}}" {% endif %}class="index-section">
         <div class="content">
-            {{body}}
+            {{ body | safe }}
         </div>
     </div>
 </section>

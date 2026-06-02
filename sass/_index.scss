@@ -31,9 +31,44 @@ body {
         div.content {
             padding-block: 2em;
         }
+
+        p {
+            font-size: 14pt;
+        }
     }
 
     div#welcome {
+        min-height: calc(100vh - 80px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
 
+        p {
+            margin-block: 0;
+        }
+
+        div.content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            gap: 1.5em;
+        }
+
+        img#welcome-logo {
+            max-height: 80px;
+        }
+
+        $landing-screenshot-shadow: 0px 0px 15px 2px;
+
+        img#landing-screenshot {
+            width: 90%;
+            max-width: 750px;
+            border-radius: min(calc(2.5vw), 24px);
+            border: min(calc(2vw), 18px) solid #111115;
+            margin-inline: auto;
+            box-shadow: $landing-screenshot-shadow rgba(0, 0, 0, 0.7);
+        }
     }
 }
