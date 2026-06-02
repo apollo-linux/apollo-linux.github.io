@@ -69,8 +69,6 @@ body {
             max-height: 80px;
         }
 
-        $landing-screenshot-shadow: 0px 0px 9px 3px;
-
         div#landing-buttons {
             display: flex;
             flex-wrap: wrap;
@@ -85,7 +83,7 @@ body {
             border-radius: min(calc(2.5vw), 24px);
             border: min(calc(2vw), 18px) solid #111115;
             margin-inline: auto;
-            box-shadow: $landing-screenshot-shadow rgba(0, 0, 0, 0.7);
+            box-shadow: 0px 0px 6px min(0.625vw, 4px) rgba(0, 0, 0, 0.5);
         }
     }
 }
