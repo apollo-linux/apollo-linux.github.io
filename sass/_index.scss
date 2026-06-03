@@ -70,7 +70,7 @@ body {
     div#get-software {
         div.content {
             img#bazaar-screenshot {
-                max-width: 70%;
+                max-width: min(650px, 100%);
             }
         }
     }
