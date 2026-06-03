@@ -5,6 +5,17 @@
   <meta charset="utf-8">
   <title>{% block title %}{% endblock title %} | Apollo</title>
   <link rel="stylesheet" href="/style.css">
+
+  {% if page.title %}
+    <meta property="og:title" content="{{ page.title }}" />
+  {% elif section.title %}
+    <meta property="og:title" content="Apollo" />
+  {% endif %}
+
+  <meta property="og:site_name" content="Apollo"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:description" content="An up to date, easy to use and privacy respecting operating system for your computer."/>
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
