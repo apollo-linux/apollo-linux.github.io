@@ -32,7 +32,7 @@ title: An up to date, easy to use and privacy respecting operating system for yo
 {% index_section(id="get-software") %}
 <div id="software-header">
     <h1>Get the software you need</h1>
-    <p>Apollo comes with <a href="https://usebazaar.org">Bazaar</a>, powered by <a href="https://flathub.org">Flathub</a> as the main way for installing and running software, so you can easily find, install and manage the apps you love alongside new ones to fall in love with.</p>
+    <p>Apollo comes with <a href="https://usebazaar.org">Bazaar</a>, powered by <a href="https://flathub.org">Flathub</a>, as the main way for installing and running software, so you can easily find, install and manage the apps you love alongside new ones to fall in love with.</p>
 </div>
 
 <img id="bazaar-screenshot" src="/images/screenshots/bazaar.png" alt="The Bazaar software store">
