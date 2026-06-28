@@ -85,13 +85,14 @@ body {
         background-size: cover;
 
         div#welcome {
-            min-height: 100vh;
+            min-height: calc(100vh - 160px);
             display: flex;
             flex-direction: column;
             justify-content: center;
             text-align: center;
 
-            padding-block: 80px;
+            padding-block-start: 120px;
+            padding-block-end: 40px;
             margin-block-end: 1.75em;
 
             backdrop-filter: blur(3px);
