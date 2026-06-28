@@ -55,6 +55,13 @@
 }
 
 
+header.index-header {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    width: 100vw;
+}
+
 header {
     margin-block: 1em;
 
