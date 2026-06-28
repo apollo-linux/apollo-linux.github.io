@@ -17,7 +17,11 @@ title: Home
     {{ button(href="#ready-from-day-one", label="Learn more") }}
 </div>
 
-<img id="landing-screenshot" src="/images/screenshots/landing_screenshot.png" alt="An Apollo desktop with the terminal open">
+
+<picture>
+    <source srcset="/images/screenshots/landing-screenshot-dark.png" media="(prefers-color-scheme: dark)">
+    <img id="landing-screenshot" src="/images/screenshots/landing-screenshot.png" alt="An Apollo desktop with the Calendar, Weather and Music apps open">
+</picture>
 {% end %}
 
 {% index_section(id="ready-from-day-one") %}
