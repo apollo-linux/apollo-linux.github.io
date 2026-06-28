@@ -27,7 +27,7 @@ $landing-screenshot-shadow: 0px 0px 6px min(0.625vw, 4px);
             background: url(/images/wallpapers/apollo-dark.png);
 
             div#welcome {
-                background: hsla(270, 18%, 12%, 65%);
+                background: hsla(270, 18%, 9%, 65%);
 
                 img#landing-screenshot {
                     box-shadow: $landing-screenshot-shadow hsla(0, 0, 0, 0.4);
@@ -95,7 +95,7 @@ body {
             padding-block-end: 40px;
             margin-block-end: 1.75em;
 
-            backdrop-filter: blur(3px);
+            backdrop-filter: blur(6px);
 
             p {
                 margin-block: 0;
