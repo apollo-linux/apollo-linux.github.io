@@ -7,15 +7,15 @@ $landing-screenshot-shadow: 0px 0px 6px min(0.625vw, 4px);
 
 @media (prefers-color-scheme: light) {
     body {
-        div#welcome {
-            background: linear-gradient(
-                180deg,
-                $light-background-colour,
-                hsl(270, 39%, 69%) 100%
-            );
+        div#welcome-background {
+            background: url(/images/wallpapers/apollo-light.png);
 
-            img#landing-screenshot {
-                box-shadow: $landing-screenshot-shadow hsla(0, 0, 15, 0.55);
+            div#welcome {
+                background: hsla(270, 29%, 79%, 75%);
+
+                img#landing-screenshot {
+                    box-shadow: $landing-screenshot-shadow hsla(0, 0, 15, 0.55);
+                }
             }
         }
     }
@@ -23,15 +23,15 @@ $landing-screenshot-shadow: 0px 0px 6px min(0.625vw, 4px);
 
 @media (prefers-color-scheme: dark) {
     body {
-        div#welcome {
-            background: linear-gradient(
-                180deg,
-                $dark-background-colour,
-                hsl(270, 26%, 18%) 100%
-            );
+        div#welcome-background {
+            background: url(/images/wallpapers/apollo-dark.png);
 
-            img#landing-screenshot {
-                box-shadow: $landing-screenshot-shadow hsla(0, 0, 0, 0.4);
+            div#welcome {
+                background: hsla(270, 18%, 12%, 65%);
+
+                img#landing-screenshot {
+                    box-shadow: $landing-screenshot-shadow hsla(0, 0, 0, 0.4);
+                }
             }
         }
     }
@@ -80,52 +80,58 @@ body {
         }
     }
 
-    div#welcome {
-        min-height: calc(100vh - 80px);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        margin-block-end: 1.75em;
+    div#welcome-background {
+        background-position: 0;
+        background-size: cover;
 
-        p {
-            margin-block: 0;
-        }
-
-        div.content {
+        div#welcome {
+            min-height: calc(100vh - 80px);
             display: flex;
             flex-direction: column;
             justify-content: center;
             text-align: center;
-            gap: 2em;
-        }
+            margin-block-end: 1.75em;
+            backdrop-filter: blur(3px);
 
-        div#landing-start {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            text-align: center;
-            gap: 1.5em;
-        }
+            p {
+                margin-block: 0;
+            }
 
-        img#welcome-logo {
-            max-height: min(max(48px, 12vw), 80px);
-        }
+            div.content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                gap: 2em;
+            }
 
-        div#landing-buttons {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin-block: 0;
-            gap: 16px;
-        }
+            div#landing-start {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                gap: 1.5em;
+            }
 
-        img#landing-screenshot {
-            width: 90%;
-            max-width: 750px;
-            border-radius: min(calc(2.5vw), 24px);
-            border: min(calc(2vw), 18px) solid hsl(280, 0, 8);
-            margin-inline: auto;
+            img#welcome-logo {
+                max-height: min(max(48px, 12vw), 80px);
+            }
+
+            div#landing-buttons {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-block: 0;
+                gap: 16px;
+            }
+
+            img#landing-screenshot {
+                width: 90%;
+                max-width: 750px;
+                border-radius: min(calc(2.5vw), 24px);
+                border: min(calc(2vw), 18px) solid hsl(280, 0, 8);
+                margin-inline: auto;
+            }
         }
     }
 }
