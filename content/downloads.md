@@ -6,7 +6,7 @@ We're excited to see you try out Apollo. If this is your first time, make sure t
 
 You should make sure to choose the right ISO for your hardware as they include the neccessary drivers. All images on this page are for **x86_64** computers.
 
-**Note:** ISOs are still a work in progress and unavailable at this time!
+**Note:** This is prerelease software, production use is not recommended. ISOs are still a work in progress and unavailable at this time!
 
 {{ download(
     title="Apollo",
